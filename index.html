@@ -1,0 +1,199 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Alike+Angular|Josefin+Sans|Josefin+Slab|Permanent+Marker|Raleway|Slabo+27px|Special+Elite|Squada+One" rel="stylesheet">
+</head>
+
+<body>
+  <div class="dropdown" style='float: right;'>
+    <button class="dropbtn"><b>menu</b></button>
+    <div class="dropdown-content">
+      <a onclick="Afunction()" href="#">About Us</a>
+      <a onclick="Afunction()" href="#">Probiotics</a>
+      <a onclick="Afunction()" href="#">Digests</a>
+      <a onclick="Afunction()" href="#">Research</a>
+      <a onclick="Afunction()" href="#">Abstracts</a>
+      <a onclick="Afunction()" href="#">Press Releases</a>
+    </div>
+  </div>
+
+<br><br><br>
+  <img src='sketch_logo_text.jpg' style="width:500px"><br>
+  <!--
+  <h1>
+    Your Gut Bugs<br><subtitle><span1>Bringing probiotic<br>science</span1><span2> to you<span2></subtitle>
+  </h1>
+-->
+  <br>
+    <form>
+    <div id="searchBar">
+    <input type="text" name="search" placeholder="Search...">
+    <button class="button" id="search" onclick="Afunction()"></button></div>
+    <br>
+    <input type="radio" class="radio-custom" name="search" value="disorders"> disorders
+    <input type="radio" class="radio-custom" name="search" value="probiotics"> probiotics
+    <input type="radio" class="radio-custom" name="search" value="all" checked> all<br><br>
+
+    <button class="button" id="browse" onclick="Afunction()">Browse Digests</button>
+  </form>
+    <br><br><br><br><br><br><br><br><br>
+
+  <div id='social'>
+    <div id='call'>Call us: 303-997-0461</div><br>
+    <!--
+    <img src='https://image.flaticon.com/icons/svg/174/174876.svg' style="width:40px;height:40px;">
+    <img src='https://image.flaticon.com/icons/svg/174/174857.svg' style="width:40px;height:40px;">
+    <img src='https://image.flaticon.com/icons/svg/174/174848.svg' style="width:40px;height:40px;">
+    <img src='https://image.flaticon.com/icons/svg/174/174851.svg' style="width:40px;height:40px;">
+    <img src='https://image.flaticon.com/icons/svg/174/174849.svg' style="width:40px;height:40px;">
+    <img src='https://image.flaticon.com/icons/svg/174/174883.svg' style="width:40px;height:40px;">
+    <br>
+  -->
+  <div>
+
+</body>
+
+<style>
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 43px;
+    cursor: pointer;
+    height:70px;
+    width: 70px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    /*background-color: #ffcc00;*/
+    background-color: white;
+    border: 1px solid black;
+    font-family: 'helvetica';
+    font-weight: lighter;
+    min-width: 160px;
+    font-size: 20;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;*/
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ffff00;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #539936;
+    color: #ffff00;
+}
+
+
+
+
+
+body{
+  padding: 1em;
+  text-align: center;
+}
+
+input[type=text] {
+    width: 300px;
+    height: 50px;
+    /*box-sizing: border-box;*/
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: transparent;
+    padding-left: 1em;
+}
+
+#search {
+    /*background-color: rgba(255,255,255,.4);*/
+    background: url(https://maxcdn.icons8.com/windows8/PNG/512/Very_Basic/search-512.png);
+    background-size: 25px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 8px 17px 40px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 4px;
+    /*color: black;
+    text-align: center;
+    font-size: 26px;
+    font-family: 'helvetica';
+    font-weight: bold;*/
+    /*width: 30px;*/
+    height: 50px;
+    /*position:relative;
+    left: -40;*/
+}
+#search:hover{
+  border: 2px solid black;
+  background-color: #87b869;
+  /*padding: 12px 8px 15px 40px;*/
+}
+
+form{
+  font-family:'helvetica';
+}
+
+.radio-custom:focus {
+  background-color: green;
+}
+
+#browse {
+    /*padding: 12px 20px 12px 40px;*/
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-family: 'helvetica';
+    font-size: 18;
+    color:black;
+    padding: 10px;
+    /*width: 100px;*/
+    height: 50px;
+}
+#browse:hover{
+  border:2px solid black;
+  background-color: #87b869;
+}
+
+.button:hover{
+  background-color: rgba(230,107,50,1);
+  background-color: #ff0066;
+  /*border: 3px solid #ff0066;
+  color: white;
+  width: 550px;*/
+}
+
+#call {
+  font-family: 'helvetica';
+  font-weight: lighter;
+  font-size: 20;
+  /*text-align: left;*/
+  /*width: 630px;*/
+}
+
+</style>
+
+<script>
+function Afunction() {
+  alert("This button doesn't do anything yet :(");
+}
+
+</script>
